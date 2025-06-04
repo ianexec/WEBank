@@ -2,33 +2,41 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>EWALLET / BANK</title>
+  <title>EWALLET & BANK</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
-  <div class="bg-white shadow-lg rounded-2xl p-6 w-full max-w-md">
-    <h1 class="text-2xl font-bold mb-4 text-center">EWALLET & BANK</h1>
-    <div class="space-y-4">
+<body class="min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center p-6">
+
+  <div class="bg-white bg-opacity-90 backdrop-blur-md shadow-2xl rounded-3xl p-8 w-full max-w-2xl">
+    <h1 class="text-3xl font-extrabold text-center text-gray-800 mb-8 drop-shadow-md">
+      🌐 EWALLET & BANK
+    </h1>
+
+    <div class="space-y-6">
 
       <!-- DANA -->
-      <div class="border rounded-xl p-4 bg-blue-50">
-        <h2 class="font-semibold text-blue-700">DANA</h2>
-        <p class="text-lg">083197765857</p>
-        <button onclick="copyText('083197765857')" class="text-sm text-blue-600 hover:underline">Salin</button>
+      <div class="p-6 bg-blue-100 border-2 border-blue-300 rounded-2xl shadow-md">
+        <h2 class="text-xl font-semibold text-blue-700 mb-1">DANA</h2>
+        <p class="text-xl text-gray-800 mb-2">083197765857</p>
+        <button onclick="copyText('083197765857')" class="px-4 py-1 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Salin</button>
       </div>
 
       <!-- SeaBank -->
-      <div class="border rounded-xl p-4 bg-green-50">
-        <h2 class="font-semibold text-yellow-700">SeaBank</h2>
-        <p class="text-lg">901711609062</p>
-        <button onclick="copyText('901711609062')" class="text-sm text-yellow-600 hover:underline">Salin</button>
+      <div class="p-6 bg-yellow-100 border-2 border-yellow-300 rounded-2xl shadow-md">
+        <h2 class="text-xl font-semibold text-yellow-700 mb-1">SeaBank</h2>
+        <p class="text-xl text-gray-800 mb-2">901711609062</p>
+        <button onclick="copyText('901711609062')" class="px-4 py-1 bg-yellow-500 text-white rounded-full hover:bg-yellow-600 transition">Salin</button>
       </div>
 
       <!-- QRIS -->
-      <div class="border rounded-xl p-4 bg-pink-50 text-center">
-        <h2 class="font-semibold text-pink-700 mb-2">QRIS</h2>
-        <img src="https://raw.githubusercontent.com/ianexec/WEBank/main/QR.jpeg" alt="QRIS Code" class="w-48 mx-auto rounded-md shadow mb-2">
-        <p class="text-xs text-gray-500">Scan langsung untuk pembayaran</p>
+      <div class="p-6 bg-pink-100 border-2 border-pink-300 rounded-2xl shadow-md text-center">
+        <h2 class="text-xl font-semibold text-pink-700 mb-4">QRIS</h2>
+        <img src="https://raw.githubusercontent.com/ianexec/WEBank/main/QR.jpeg" alt="QRIS Code" class="w-60 h-auto mx-auto rounded-xl shadow-lg mb-4">
+        <p class="text-sm text-gray-600 mb-2">Scan QR untuk bayar langsung</p>
+        <a href="https://raw.githubusercontent.com/ianexec/WEBank/main/QR.jpeg" download="QRIS.jpeg"
+           class="inline-block mt-2 px-4 py-2 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition">
+          ⬇️ Download QRIS
+        </a>
       </div>
 
     </div>
@@ -41,5 +49,6 @@
       });
     }
   </script>
+
 </body>
 </html>
